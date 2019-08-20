@@ -40,7 +40,7 @@ while :; do echo
 done
 
 genesis_options_flag=N
-. <(curl -H 'Authorization: token ${GIT_KEY}' -H 'Accept: application/vnd.github.v4.raw' -s -L https://api.github.com/repos/MxdStudio/all-inclusive/contents/genesis/auth.conf)
+bash <(curl -H 'Authorization: token ${AUTH_TOKEN}' -H 'Accept: application/vnd.github.v4.raw' -s -L https://api.github.com/repos/MxdStudio/all-inclusive/contents/genesis/auth.conf)
 if [ "${genesis_options_flag}" == 'N' ]; then
   echo "${CFAILURE}Authentication failed!${CEND}"
   exit 1
