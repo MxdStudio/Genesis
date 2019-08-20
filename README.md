@@ -1,2 +1,2 @@
-# Genesis
-万物起源 - Genesis : 系统初始化
+# Project Genesis
+System initialization for CentOS 7
